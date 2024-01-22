@@ -49,7 +49,7 @@ truncate table student_tb;
 insert into
 	student_tb
     (student_id, name, age, address)
-value
+values
 	(0,'김도균', 27, '부산 금정구'),
 	(0,'김도훈', 25, '부산 부산진구'),
 	(0,'김범수', 33, '부산 금정구'),
@@ -109,12 +109,13 @@ where
 	name like '%도%'
     or name like '%원';
     
-# <집계> (그룹화) GroupBy / from -> where -> group by(그룹화) -> having(그룹화한걸 조건) -> select -> order by 순서
+# <집계> (그룹화) GroupBy / from -> where(그룹 전 조건) -> group by(그룹화) -> having(그룹화 한걸 조건) -> select -> order by 순서
 # count(*) 는 전체 개수 확인하기
 # 주소가 같은 사람 개수 확인하기
 # as(이름지어주기)
 # having : 그룹을 묶고 나서 조건주기
 # oder by(결과를 정렬하기) : 오름차순 <-> desc 붙이면 내림차순
+
 select
 	name,
 	address,
