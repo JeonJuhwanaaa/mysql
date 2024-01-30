@@ -1,5 +1,5 @@
 # author_tb에 select한 값 그대로 넣기
-insert into author_tb
+-- insert into author_tb
 SELECT
 	0,
 	author
@@ -9,6 +9,8 @@ group by
 	author
 order by
 	author;
+    
+truncate table author_tb;
     
 select
 	*
